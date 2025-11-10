@@ -44,7 +44,7 @@ const TechStack = () => {
             Technology Stack
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            We leverage cutting-edge technologies to build robust, scalable, 
+            I leverage cutting-edge technologies to build robust, scalable,
             and performant web applications
           </p>
         </div>

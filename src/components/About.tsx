@@ -10,12 +10,12 @@ const About = () => {
     {
       icon: Shield,
       title: "Secure & Reliable",
-      description: "Enterprise-grade security and bulletproof code quality"
+      description: "Production-ready security and maintainable code"
     },
     {
       icon: Sparkles,
       title: "Modern Design",
-      description: "Beautiful, responsive interfaces that captivate users"
+      description: "Clean, responsive interfaces that focus on usability"
     }
   ];
 
@@ -25,12 +25,12 @@ const About = () => {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16 animate-fade-in">
             <h2 className="text-4xl sm:text-5xl font-bold mb-6">
-              Building the Future of Web
+              Building exceptional web experiences
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              We're a team of passionate developers specializing in creating exceptional 
-              web experiences using Angular and React. From interactive websites to 
-              full-featured progressive web apps, we deliver solutions that exceed expectations.
+              I'm a freelance developer specializing in Angular and React. I design and build
+              fast, accessible, and maintainable websites and progressive web apps tailored to
+              each client's goals.
             </p>
           </div>
 
@@ -51,15 +51,15 @@ const About = () => {
           </div>
 
           <div className="bg-card border border-border rounded-2xl p-8 lg:p-12">
-            <h3 className="text-2xl font-bold mb-6">What Sets Us Apart</h3>
+            <h3 className="text-2xl font-bold mb-6">What I Offer</h3>
             <div className="grid sm:grid-cols-2 gap-6">
               {[
-                "Modern framework expertise (Angular & React)",
-                "Progressive Web App specialists",
-                "Performance-first development approach",
+                "Personalized, direct communication",
+                "Hands-on implementation using Angular or React",
+                "Performance-first development",
                 "Responsive and accessible design",
                 "Clean, maintainable code",
-                "Ongoing support and maintenance"
+                "Flexible timelines and ongoing support"
               ].map((item, index) => (
                 <div key={index} className="flex items-start gap-3">
                   <CheckCircle2 className="w-6 h-6 text-primary flex-shrink-0 mt-0.5" />

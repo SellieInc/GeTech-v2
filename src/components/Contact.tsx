@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
-import { Mail, Phone, MapPin, Send } from "lucide-react";
+import { Mail, MapPin, Send } from "lucide-react";
 import { z } from "zod";
 
 const contactSchema = z.object({
@@ -30,7 +30,7 @@ const Contact = () => {
       
       toast({
         title: "Message sent!",
-        description: "We'll get back to you as soon as possible.",
+        description: "I'll get back to you as soon as possible.",
       });
       
       setFormData({ name: "", email: "", message: "" });
@@ -51,20 +51,13 @@ const Contact = () => {
     {
       icon: Mail,
       title: "Email",
-      value: "hello@webdev.studio",
-      link: "mailto:hello@webdev.studio"
-    },
-    {
-      icon: Phone,
-      title: "Phone",
-      value: "+1 (555) 123-4567",
-      link: "tel:+15551234567"
+      value: "selliestrydom@gmail.com",
+      link: "mailto:selliestrydom@gmail.com"
     },
     {
       icon: MapPin,
       title: "Location",
-      value: "San Francisco, CA",
-      link: "#"
+      value: "Cape Town, South Africa",
     }
   ];
 
@@ -76,7 +69,7 @@ const Contact = () => {
             Let's Build Something Amazing
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Ready to start your project? Get in touch and let's discuss how we can help bring your ideas to life
+            Ready to start your project? Get in touch and let's discuss how I can help bring your ideas to life
           </p>
         </div>
 
@@ -107,8 +100,8 @@ const Contact = () => {
               </div>
 
               <div>
-                <Textarea
-                  placeholder="Tell us about your project..."
+                  <Textarea
+                  placeholder="Tell me about your project..."
                   value={formData.message}
                   onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                   className="min-h-[150px]"
@@ -147,24 +140,6 @@ const Contact = () => {
                     </div>
                   </a>
                 ))}
-              </div>
-            </div>
-
-            <div className="bg-card border border-border rounded-2xl p-8">
-              <h3 className="text-xl font-bold mb-4">Business Hours</h3>
-              <div className="space-y-2 text-muted-foreground">
-                <div className="flex justify-between">
-                  <span>Monday - Friday</span>
-                  <span className="font-medium">9:00 AM - 6:00 PM</span>
-                </div>
-                <div className="flex justify-between">
-                  <span>Saturday</span>
-                  <span className="font-medium">10:00 AM - 4:00 PM</span>
-                </div>
-                <div className="flex justify-between">
-                  <span>Sunday</span>
-                  <span className="font-medium">Closed</span>
-                </div>
               </div>
             </div>
           </div>

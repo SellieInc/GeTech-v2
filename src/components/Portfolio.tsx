@@ -1,30 +1,30 @@
 import { ExternalLink, Code } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import ecommerceImg from "@/assets/project-ecommerce.jpg";
-import dashboardImg from "@/assets/project-dashboard.jpg";
-import socialImg from "@/assets/project-social.jpg";
+import filtercityImg from "@/assets/filtercity.png";
+import testifyImg from "@/assets/testify.png";
+import vinecloudImg from "@/assets/vinecloud.png";
 
 const Portfolio = () => {
   const projects = [
     {
-      title: "E-Commerce Platform",
-      description: "Full-featured online store with payment integration, inventory management, and real-time updates",
-      image: ecommerceImg,
-      tech: ["React", "TypeScript", "Firebase", "Stripe"],
+      title: "FilterCity",
+      description: "FilterCity — A supplier platform for machines and equipment that streamlines discovery, comparison, and procurement with rich product specs and advanced filters.",
+      image: filtercityImg,
+      tech: ["React", "TypeScript"],
       link: "#"
     },
     {
-      title: "Analytics Dashboard",
-      description: "Progressive web app for data visualization with real-time metrics and interactive charts",
-      image: dashboardImg,
-      tech: ["Angular", "TypeScript", "D3.js", "Node.js"],
+      title: "Testify (LIMS)",
+      description: "Testify — A Laboratory Information Management System (LIMS) for tracking samples and workflows, capturing and storing lab data across regulated environments.",
+      image: testifyImg,
+      tech: ["Angular", "TypeScript","NodeJs", "PWA"],
       link: "#"
     },
     {
-      title: "Social Media App",
-      description: "Engaging social platform with posts, comments, likes, and real-time notifications",
-      image: socialImg,
-      tech: ["React", "TypeScript", "Firebase", "PWA"],
+      title: "VineCloud",
+      description: "VineCloud — An information system for agricultural program management that connects field teams, crop data, and administrators to improve monitoring and decision-making.",
+      image: vinecloudImg,
+      tech: ["Angular", "TypeScript","NodeJs", "PWA"],
       link: "#"
     }
   ];
@@ -37,7 +37,7 @@ const Portfolio = () => {
             Featured Projects
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Explore our portfolio of successful projects that showcase our expertise 
+            Explore my portfolio of successful projects that showcase my work
             in building modern web applications
           </p>
         </div>

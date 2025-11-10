@@ -1,20 +1,17 @@
-import { Code2, Github, Linkedin, Twitter } from "lucide-react";
+import { Github, Linkedin, Twitter } from "lucide-react";
 
 const Footer = () => {
-  const currentYear = new Date().getFullYear();
-
   const footerLinks = {
     services: [
-      { label: "Web Development", href: "#" },
-      { label: "Progressive Web Apps", href: "#" },
-      { label: "UI/UX Design", href: "#" },
-      { label: "Consulting", href: "#" }
+      { label: "Web Development"},
+      { label: "Progressive Web Apps"},
+      { label: "UI/UX Design"},
+      { label: "Consulting" }
     ],
     company: [
-      { label: "About Us", href: "#about" },
+      { label: "About Me", href: "#about" },
       { label: "Portfolio", href: "#portfolio" },
       { label: "Contact", href: "#contact" },
-      { label: "Blog", href: "#" }
     ],
     legal: [
       { label: "Privacy Policy", href: "#" },
@@ -36,10 +33,10 @@ const Footer = () => {
           {/* Brand */}
           <div>
             <div className="flex items-center gap-2 mb-4">
-              <div className="w-10 h-10 bg-gradient-to-br from-primary to-accent rounded-lg flex items-center justify-center">
-                <Code2 className="w-6 h-6 text-background" />
+              <div className="w-10 h-10 rounded-lg overflow-hidden">
+                <img src="/logo192.png" alt="logo" className="w-full h-full object-cover" />
               </div>
-              <span className="text-xl font-bold">WebDev Studio</span>
+              <span className="text-xl font-bold">GeTech Software</span>
             </div>
             <p className="text-muted-foreground mb-6">
               Crafting exceptional web experiences with Angular and React. 
@@ -68,7 +65,6 @@ const Footer = () => {
               {footerLinks.services.map((link, index) => (
                 <li key={index}>
                   <a
-                    href={link.href}
                     className="text-muted-foreground hover:text-primary transition-colors"
                   >
                     {link.label}
@@ -111,16 +107,6 @@ const Footer = () => {
               ))}
             </ul>
           </div>
-        </div>
-
-        {/* Bottom Bar */}
-        <div className="pt-8 border-t border-border flex flex-col sm:flex-row justify-between items-center gap-4">
-          <p className="text-muted-foreground text-sm">
-            © {currentYear} WebDev Studio. All rights reserved.
-          </p>
-          <p className="text-muted-foreground text-sm">
-            Built with ❤️ using React & TypeScript
-          </p>
         </div>
       </div>
     </footer>

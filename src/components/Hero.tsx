@@ -22,18 +22,16 @@ const Hero = () => {
         <div className="text-center animate-fade-in-up">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 mb-8">
             <Code2 className="w-4 h-4 text-primary" />
-            <span className="text-sm text-primary font-medium">Modern Web Development</span>
+            <span className="text-sm text-primary font-medium">Freelance Web Development</span>
           </div>
           
           <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold mb-6 bg-gradient-to-r from-foreground via-primary to-accent bg-clip-text text-transparent leading-tight">
-            Crafting Cutting-Edge
-            <br />
-            Web Experiences
+            GeTech
           </h1>
           
           <p className="text-xl sm:text-2xl text-muted-foreground mb-12 max-w-3xl mx-auto">
-            Expert Angular & React development for businesses that demand excellence. 
-            We build lightning-fast websites and progressive web apps that users love.
+            Freelance Angular & React development for businesses that demand excellence.
+            I build lightning-fast websites and progressive web apps that users love.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">

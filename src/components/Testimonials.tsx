@@ -30,7 +30,7 @@ const Testimonials = () => {
             Client Success Stories
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Don't just take our word for it - hear from our satisfied clients
+            Don't just take my word for it — hear from satisfied clients
           </p>
         </div>
 
